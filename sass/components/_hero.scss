@@ -1,0 +1,67 @@
+.hero__box {
+  text-align: center;
+}
+.hero__title {
+  font-family: 'Volkhov';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.8;
+  letter-spacing: -0.04em;
+  color: #181e4b;
+  margin-bottom: 19px;
+}
+
+.hero__text,
+.hero__desc {
+  display: none;
+}
+
+.hero__button {
+  // font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  text-align: center;
+  color: $white-text-color;
+  background: #f1a501;
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  border-radius: 10px;
+  padding: 19px 26px;
+  border: none;
+  margin-bottom: 40px;
+}
+
+.demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__btn {
+    background: #df6951;
+    box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+    border-radius: 50%;
+    border: none;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  &__icon {
+    fill: $bg-white-color;
+    max-width: 15px;
+    max-height: 15px;
+  }
+  &__text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.06rem;
+    line-height: 1.5;
+    color: #686d77;
+  }
+}

@@ -1,0 +1,23 @@
+.page-header {
+  background-color: $secondary-bg-color;
+}
+
+.menu-list {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: $menu-text-color;
+}
+
+.links-box a {
+  display: none;
+}
+
+.nav__logo-img {
+  width: 114px;
+  height: 33px;
+}
