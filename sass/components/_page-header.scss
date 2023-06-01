@@ -3,14 +3,17 @@
 }
 
 .menu-list {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.875rem;
-  line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.2px;
-  color: $menu-text-color;
+  &__link {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $menu-text-color;
+  }
 }
 
 .links-box a {
@@ -20,4 +23,23 @@
 .nav__logo-img {
   width: 114px;
   height: 33px;
+}
+
+.language__text,
+input[type='checkbox'] {
+  display: none;
+}
+
+input[type='checkbox']:checked ~ .language__text {
+  display: block;
+}
+
+.language__btn {
+  display: inline-block;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.language__icon {
+  stroke-width: 10px;
 }

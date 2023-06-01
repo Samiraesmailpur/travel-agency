@@ -21,30 +21,46 @@
     <header class="page-header">
       <div class="container">
         <nav class="nav">
-          <a class="nav__logo-link" href="./index.html">
-            <img class="nav__logo-img" src="./images/logo.svg" alt="logo" />
-          </a>
+          <div>
+            <a class="nav__logo-link" href="./index.html">
+              <img class="nav__logo-img" src="./images/logo.svg" alt="logo" />
+            </a>
+            <div>
+              <div class="language">
+                EN
+                <label for="pseudoBtn" class="language__btn">
+                  <svg class="language__icon" width="9" height="4.5">
+                    <use href="./images/symbol-defs.svg#icon-arrow"></use></svg
+                ></label>
+                <input type="checkbox" id="pseudoBtn" />
+                <div class="language__text">UA</div>
+              </div>
+              <button class="button-menu" type="button">
+                <svg class="button-menu__icon" width="24" height="14">
+                  <use href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
           <ul class="menu-list">
-            <li class="menu-list__item">Destination</li>
-            <li class="menu-list__item">Hotels</li>
-            <li class="menu-list__item">Flights</li>
-            <li class="menu-list__item">Booking</li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="">Destination</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="">Hotels</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="">Flights</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="">Booking</a>
+            </li>
           </ul>
           <div class="links-box">
             <a class="links-box__login" href="">Login</a>
             <a class="links-registration" href="">Sign up</a>
           </div>
-          <div class="language">
-            <p class="language__text">EN</p>
-            <svg class="language__icon" width="9" height="4.5">
-              <use href="./images/symbol-defs.svg#icon-arrow"></use>
-            </svg>
-          </div>
-          <button class="button-menu" type="button">
-            <svg class="button-menu__icon" width="24" height="14">
-              <use href="./images/symbol-defs.svg#icon-menu"></use>
-            </svg>
-          </button>
         </nav>
       </div>
     </header>
@@ -148,57 +164,64 @@
       </section>
       <section class="selling">
         <div class="container">
-          <div class="selling-box">
+          <div class="selling-date">
             <p class="selling-box__text">Top Selling</p>
-            <h2 class="selling-box__text">Top Destinations</h2>
+            <h2 class="selling-box__title">Top Destinations</h2>
           </div>
           <ul class="selling-list">
             <li class="selling-list__item">
               <picture class="selling-list__pic">
                 <source srcset="./images/rome-mob.jpg 1x, ./images/rome-mob-2x.jpg 2x" />
-                <img class="cards-list__image" src="./images/rome-mob.jpg" alt="Rome" />
+                <img class="selling-list__image" src="./images/rome-mob.jpg" alt="Rome" />
               </picture>
-              <div>
-                <p>Rome, Italy</p>
-                <a href="">
-                  <svg width="15" height="16">
-                    <use href="./images/symbol-defs.svg#icon-navigation"></use>
-                  </svg>
-                  10 Days Trip
-                </a>
-                <p>$5,42k</p>
+              <div class="selling-box">
+                <div class="selling-box__text">
+                  Rome, Italy <br />
+                  <a class="selling-box__link" href="">
+                    <svg class="selling-box__icon" width="15" height="16">
+                      <use href="./images/symbol-defs.svg#icon-navigation"></use>
+                    </svg>
+                    10 Days Trip
+                  </a>
+                </div>
+                <p class="selling-box__price">$5,42k</p>
               </div>
             </li>
-            <li>
-              <picture>
+            <li class="selling-list__item">
+              <picture class="selling-list__pic">
                 <source srcset="./images/london-mob.jpg 1x, ./images/london-mob-2x.jpg 2x" />
                 <img class="cards-list__image" src="./images/london-mob.jpg" alt="Rome" />
               </picture>
-              <div>
-                <p>London, UK</p>
-                <a href="">
-                  <svg width="15" height="16">
-                    <use href="./images/symbol-defs.svg#icon-navigation"></use>
-                  </svg>
-                  12 Days Trip
-                </a>
-                <p>$4.2k</p>
+              <div class="selling-box">
+                <div class="selling-box__text">
+                  London, UK
+                  <br />
+                  <a class="selling-box__link" href="">
+                    <svg class="selling-box__icon" width="15" height="16">
+                      <use href="./images/symbol-defs.svg#icon-navigation"></use>
+                    </svg>
+                    12 Days Trip
+                  </a>
+                </div>
+                <p class="selling-box__price">$4.2k</p>
               </div>
             </li>
-            <li>
-              <picture>
+            <li class="selling-list__item">
+              <picture class="selling-list__pic">
                 <source srcset="./images/europe-mob.jpg 1x, ./images/europe-mob-2x.jpg 2x" />
                 <img class="cards-list__image" src="./images/europe-mob.jpg" alt="Rome" />
               </picture>
-              <div>
-                <p>Full Europe</p>
-                <a href="">
-                  <svg width="15" height="16">
-                    <use href="./images/symbol-defs.svg#icon-navigation"></use>
-                  </svg>
-                  28 Days Trip
-                </a>
-                <p>$15k</p>
+              <div class="selling-box">
+                <div class="selling-box__text">
+                  Full Europe <br />
+                  <a class="selling-box__link" href="">
+                    <svg class="selling-box__icon" width="15" height="16">
+                      <use href="./images/symbol-defs.svg#icon-navigation"></use>
+                    </svg>
+                    28 Days Trip
+                  </a>
+                </div>
+                <p class="selling-box__price">$15k</p>
               </div>
             </li>
           </ul>

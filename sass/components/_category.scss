@@ -1,3 +1,8 @@
+.category {
+  padding-top: 10px;
+  padding-bottom: 160px;
+}
+
 .category__desc {
   font-family: 'Poppins';
   font-style: normal;
@@ -28,7 +33,7 @@
   justify-items: center;
 
   @media screen and (min-width: 480px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   @media screen and (min-width: 768px) {
@@ -40,23 +45,22 @@
 }
 .category-list__item {
   width: 100%;
-  padding: 45px 40px;
+  padding: 45px 35px;
   height: auto;
   position: relative;
   background: $bg-white-color;
   border-radius: 36px;
+  max-width: 272px;
 
   &:nth-last-child(-n + 2) {
     display: none;
-  }
-  @media screen and (min-width: 480px) {
-    max-width: 272px;
   }
   @media screen and (min-width: 768px) {
     &:nth-last-child(-n + 1) {
       display: block;
     }
   }
+
   @media screen and (min-width: 1200px) {
     max-width: 267px;
     &:nth-last-child(-n + 2) {
@@ -107,7 +111,7 @@
 }
 
 .category-list__img {
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
 }
 
 .category-list__box {
