@@ -51,6 +51,7 @@
   background: $bg-white-color;
   border-radius: 36px;
   max-width: 272px;
+  cursor: pointer;
 
   &:nth-last-child(-n + 2) {
     display: none;
@@ -79,7 +80,7 @@
   right: 75%;
   z-index: -1;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 300ms;
   width: 102px;
   height: 100px;
 }

@@ -1,6 +1,12 @@
 .hero {
   padding-top: 74px;
   padding-bottom: 92px;
+
+  &__bg {
+    background-image: url(../../images/hero-stars.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
 }
 
 .hero__box {
@@ -54,6 +60,12 @@
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    cursor: pointer;
+    transition: transform 300ms ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__icon {

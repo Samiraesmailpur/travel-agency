@@ -1,0 +1,72 @@
+.footer {
+  background: $secondary-bg-color;
+  padding-top: 13px;
+  padding-bottom: 27px;
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__logo {
+    font-weight: 500;
+    font-size: 2.75rem;
+    line-height: 1.5;
+    color: $logo-text-color;
+    margin-bottom: 19px;
+  }
+
+  &__desc {
+    font-weight: 500;
+    font-size: 0.81rem;
+    line-height: 1.2;
+    color: $primary-text-color;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.31rem;
+    line-height: 1.2;
+    color: $footer-text-color;
+    margin-bottom: 34px;
+  }
+
+  &__list {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    color: $primary-text-color;
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.app {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  color: $primary-text-color;
+  margin: 0 auto 58px auto;
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__box {
+    display: flex;
+  }
+}
+
+.copyrights {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: $primary-text-color;
+  text-align: center;
+}

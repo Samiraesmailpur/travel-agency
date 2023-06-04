@@ -66,8 +66,8 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container hero-container">
-          <div class="hero__bg">
+        <div class="hero__bg">
+          <div class="container hero-container">
             <div class="hero__box">
               <svg class="hero__icon">
                 <use href="./images/symbol-defs.svg#icon-plane"></use>
@@ -81,7 +81,7 @@
               <button class="hero__button" type="button">Find out more</button>
             </div>
             <div class="demo">
-              <button class="demo__btn" href="">
+              <button type="button" class="demo__btn" href="">
                 <svg class="demo__icon" width="15" height="15">
                   <use href="./images/symbol-defs.svg#icon-video"></use>
                 </svg>
@@ -162,276 +162,330 @@
           </ul>
         </div>
       </section>
-      <section class="selling">
-        <div class="container">
-          <div class="selling-date">
-            <p class="selling-box__text">Top Selling</p>
-            <h2 class="selling-box__title">Top Destinations</h2>
-          </div>
-          <ul class="selling-list">
-            <li class="selling-list__item">
-              <picture class="selling-list__pic">
-                <source srcset="./images/rome-mob.jpg 1x, ./images/rome-mob-2x.jpg 2x" />
-                <img class="selling-list__image" src="./images/rome-mob.jpg" alt="Rome" />
-              </picture>
-              <div class="selling-box">
-                <div class="selling-box__text">
-                  Rome, Italy <br />
-                  <a class="selling-box__link" href="">
-                    <svg class="selling-box__icon" width="15" height="16">
-                      <use href="./images/symbol-defs.svg#icon-navigation"></use>
-                    </svg>
-                    10 Days Trip
-                  </a>
+      <section class="destinations">
+        <div class="destinations__bg">
+          <div class="container destinations__container">
+            <div class="destinations__date">
+              <p class="destinations__text">Top Selling</p>
+              <h2 class="destinations__title">Top Destinations</h2>
+            </div>
+            <ul class="destinations__list">
+              <li class="destinations__item">
+                <picture class="destinations__pic">
+                  <source srcset="./images/rome-mob.jpg 1x, ./images/rome-mob-2x.jpg 2x" />
+                  <img class="destinations__image" src="./images/rome-mob.jpg" alt="Rome" />
+                </picture>
+                <div class="destinations-box">
+                  <div class="destinations-box__text">
+                    Rome, Italy <br />
+                    <a class="destinations-box__link" href="">
+                      <svg class="destinations-box__icon" width="15" height="16">
+                        <use href="./images/symbol-defs.svg#icon-navigation"></use>
+                      </svg>
+                      10 Days Trip
+                    </a>
+                  </div>
+                  <p class="destinations-box__price">$5,42k</p>
                 </div>
-                <p class="selling-box__price">$5,42k</p>
-              </div>
-            </li>
-            <li class="selling-list__item">
-              <picture class="selling-list__pic">
-                <source srcset="./images/london-mob.jpg 1x, ./images/london-mob-2x.jpg 2x" />
-                <img class="cards-list__image" src="./images/london-mob.jpg" alt="Rome" />
-              </picture>
-              <div class="selling-box">
-                <div class="selling-box__text">
-                  London, UK
-                  <br />
-                  <a class="selling-box__link" href="">
-                    <svg class="selling-box__icon" width="15" height="16">
-                      <use href="./images/symbol-defs.svg#icon-navigation"></use>
-                    </svg>
-                    12 Days Trip
-                  </a>
-                </div>
-                <p class="selling-box__price">$4.2k</p>
-              </div>
-            </li>
-            <li class="selling-list__item">
-              <picture class="selling-list__pic">
-                <source srcset="./images/europe-mob.jpg 1x, ./images/europe-mob-2x.jpg 2x" />
-                <img class="cards-list__image" src="./images/europe-mob.jpg" alt="Rome" />
-              </picture>
-              <div class="selling-box">
-                <div class="selling-box__text">
-                  Full Europe <br />
-                  <a class="selling-box__link" href="">
-                    <svg class="selling-box__icon" width="15" height="16">
-                      <use href="./images/symbol-defs.svg#icon-navigation"></use>
-                    </svg>
-                    28 Days Trip
-                  </a>
-                </div>
-                <p class="selling-box__price">$15k</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <div>
-          <div>
-            <h2>Book your next trip in 3 easy steps</h2>
-            <ul>
-              <li>
-                <svg width="22" height="22">
-                  <use href="./images/symbol-defs.svg#icon-square"></use>
-                </svg>
-                <h3>Choose Destination</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
               </li>
-              <li>
-                <svg width="22" height="18">
-                  <use href="./images/symbol-defs.svg#icon-water-sport"></use>
-                </svg>
-                <h3>Make Payment</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+              <li class="destinations__item">
+                <picture class="destinations__pic">
+                  <source srcset="./images/london-mob.jpg 1x, ./images/london-mob-2x.jpg 2x" />
+                  <img class="destinations__image" src="./images/london-mob.jpg" alt="Rome" />
+                </picture>
+                <div class="destinations-box">
+                  <div class="destinations-box__text">
+                    London, UK
+                    <br />
+                    <a class="destinations-box__link" href="">
+                      <svg class="destinations-box__icon" width="15" height="16">
+                        <use href="./images/symbol-defs.svg#icon-navigation"></use>
+                      </svg>
+                      12 Days Trip
+                    </a>
+                  </div>
+                  <p class="destinations-box__price">$4.2k</p>
+                </div>
               </li>
-              <li>
-                <svg width="22" height="19">
-                  <use href="./images/symbol-defs.svg#icon-car"></use>
-                </svg>
-                <h3>Reach Airport on Selected Date</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+              <li class="destinations__item">
+                <picture class="destinations__pic">
+                  <source srcset="./images/europe-mob.jpg 1x, ./images/europe-mob-2x.jpg 2x" />
+                  <img class="destinations__image" src="./images/europe-mob.jpg" alt="Rome" />
+                </picture>
+                <div class="destinations-box">
+                  <div class="destinations-box__text">
+                    Full Europe <br />
+                    <a class="destinations-box__link" href="">
+                      <svg class="destinations-box__icon" width="15" height="16">
+                        <use href="./images/symbol-defs.svg#icon-navigation"></use>
+                      </svg>
+                      28 Days Trip
+                    </a>
+                  </div>
+                  <p class="destinations-box__price">$15k</p>
+                </div>
               </li>
             </ul>
-            <div>
-              <img src="./images/girl.jpg" alt="girl" />
-              <p>Trip To Greece</p>
-              <p>
-                14-29 &nbsp;&nbsp;| by Robbin joseph<br />
-                June
-              </p>
-              <svg width="12" height="12">
-                <use href="./images/symbol-defs.svg#icon-leaf"></use>
-              </svg>
-              <svg width="12" height="12">
-                <use href="./images/symbol-defs.svg#icon-map"></use>
-              </svg>
-              <svg width="12" height="12">
-                <use href="./images/symbol-defs.svg#icon-telegram"></use>
-              </svg>
-              <div>
-                <svg width="13" height="14">
-                  <use href="./images/symbol-defs.svg#icon-house"></use>
-                </svg>
-                <span>24 people going</span>
-                <svg width="16" height="16">
-                  <use href="./images/symbol-defs.svg#icon-heart"></use>
-                </svg>
-              </div>
-              <div>
-                <img src="./images/building.png" alt="building" />
-                <p>Ongoing</p>
-                <p>Trip to rome</p>
-                <p><span>40%</span>completed</p>
+          </div>
+        </div>
+      </section>
+      <section class="steps">
+        <div class="steps__bg">
+          <div class="container">
+            <div class="steps-box">
+              <p class="steps-box__text">Easy and Fast</p>
+              <h2 class="steps-box__title">
+                Book your next <br />
+                trip <br />
+                in 3 easy steps
+              </h2>
+              <ul class="steps-list">
+                <li class="steps-list__item">
+                  <div class="steps-list__bg steps-list__bg_yellow">
+                    <svg class="steps-list__icon" width="22" height="22">
+                      <use href="./images/symbol-defs.svg#icon-square"></use>
+                    </svg>
+                  </div>
+                  <div class="steps-list__desc">
+                    <h3 class="steps-list__title">Choose Destination</h3>
+                    <p class="steps-list__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                    </p>
+                  </div>
+                </li>
+                <li class="steps-list__item">
+                  <div class="steps-list__bg steps-list__bg_red">
+                    <svg class="steps-list__icon" width="22" height="18">
+                      <use href="./images/symbol-defs.svg#icon-water-sport"></use>
+                    </svg>
+                  </div>
+                  <div class="steps-list__desc">
+                    <p class="steps-list__title">Make Payment</p>
+                    <p class="steps-list__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                    </p>
+                  </div>
+                </li>
+                <li class="steps-list__item">
+                  <div class="steps-list__bg steps-list__bg_green">
+                    <svg class="steps-list__icon" width="22" height="19">
+                      <use href="./images/symbol-defs.svg#icon-car"></use>
+                    </svg>
+                  </div>
+                  <div class="steps-list__desc">
+                    <p class="steps-list__title">Reach Airport on Selected Date</p>
+                    <p class="steps-list__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <div class="trip">
+                <img class="trip__img" src="./images/girl.jpg" alt="girl" />
+                <h3 class="trip__title">Trip To Greece</h3>
+                <p class="trip__text">
+                  14-29 <span class="trip__line">&nbsp;&nbsp;|</span> by Robbin joseph<br />
+                  June
+                </p>
+                <ul class="trip__list">
+                  <li class="trip__item">
+                    <svg class="trip__icon" width="12" height="12">
+                      <use href="./images/symbol-defs.svg#icon-leaf"></use>
+                    </svg>
+                  </li>
+                  <li class="trip__item">
+                    <svg class="trip__icon" width="12" height="12">
+                      <use href="./images/symbol-defs.svg#icon-map"></use>
+                    </svg>
+                  </li>
+                  <li class="trip__item">
+                    <svg class="trip__icon" width="12" height="12">
+                      <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="trip__info">
+                  <div class="trip__data">
+                    <svg class="trip__icon" width="13" height="14">
+                      <use href="./images/symbol-defs.svg#icon-house"></use>
+                    </svg>
+                    <span>24 people going</span>
+                  </div>
+                  <svg width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-heart"></use>
+                  </svg>
+                </div>
+                <div class="card">
+                  <img class="card__image" src="./images/building.png" alt="building" />
+                  <p class="card__status">Ongoing</p>
+                  <p class="card__place">Trip to rome</p>
+                  <p class="card__progress">
+                    <span class="card__progress_violet">40%</span>completed
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <p>Testimonals</p>
-            <h2>What people say about us</h2>
-          </div>
-          <div>
-            <img src="./images/man.png" alt="man" />
-            <p>
-              “On the Windows talking painted pasture yet its express parties use. Sure last upon he
-              same as knew next. Of believed or diverted no.”
-            </p>
-            <p>Mike Taylor</p>
-            <p>Lahore, Pakistan</p>
+      <section class="testimonals">
+        <div class="container testimonals__container">
+          <div class="testimonals__content">
+            <div class="testimonals__desc">
+              <p class="testimonals__text">Testimonals</p>
+              <h2 class="testimonals__title">What people say about us</h2>
+            </div>
+            <div class="testimonals__card">
+              <img class="testimonals__img" src="./images/man.png" alt="man" />
+              <p class="testimonals__review">
+                “On the Windows talking painted pasture yet its express parties use. Sure last upon
+                he same as knew next. Of believed or diverted no.”
+              </p>
+              <p class="testimonals__name">Mike Taylor</p>
+              <p class="testimonals__place">Lahore, Pakistan</p>
+            </div>
           </div>
         </div>
       </section>
-      <section>
-        <div>
-          <h4>Top Selling</h4>
-          <ul>
-            <li>
-              <img src="./images/axon.svg" alt="axon" />
+      <section class="selling">
+        <div class="container selling__container">
+          <h4 class="selling__title">Top Selling</h4>
+          <ul class="selling__list">
+            <li class="selling__item">
+              <a class="selling__link" href="">
+                <img class="selling__img" src="./images/axon.png" alt="axon" width="130px" />
+              </a>
             </li>
-            <li>
-              <img src="./images/jetstar.svg" alt="jetstar" />
+            <li class="selling__item">
+              <a class="selling__link" href="">
+                <img class="selling__img" src="./images/jetstar.png" alt="jetstar" width="172px" />
+              </a>
             </li>
-            <li>
-              <img src="./images/expedia.svg" alt="expedia" />
+            <li class="selling__item">
+              <a class="selling__link" href="">
+                <img class="selling__img" src="./images/expedia.png" alt="expedia" width="162px" />
+              </a>
             </li>
-            <li>
-              <img src="./images/qantas.svg" alt="qantas" />
+            <li class="selling__item">
+              <a class="selling__link" href="">
+                <img class="selling__img" src="./images/qantas.png" alt="qantas" width="162px" />
+              </a>
+            </li>
+            <li class="selling__item">
+              <a class="selling__link" href="">
+                <img class="selling__img" src="./images/alitalia.png" alt="qantas" width="162px" />
+              </a>
             </li>
           </ul>
-          <div>
-            <p>
+          <div class="subscribe">
+            <p class="subscribe__text">
               Subscribe to get information, latest news and other interesting offers about Cobham
             </p>
-            <form>
-              <input placeholder="Your email" type="email" required />
-              <button type="submit">Subscribe</button>
-              <svg width="30" height="25">
+            <form class="subscribe__form">
+              <input class="subscribe__input" placeholder="Your email" type="email" required />
+              <button class="subscribe__btn" type="submit">Subscribe</button>
+            </form>
+            <div class="subscribe__bg">
+              <svg class="subscribe__icon" width="30" height="25">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
-            </form>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
-      <div>
-        <div>
-          <a href="./index.html">
-            <img src="./images/logo-footer.svg" alt="logo" />
-          </a>
-          <p>Book your trip in minute, get full Control for much longer.</p>
-        </div>
-        <div>
-          <div>Company</div>
-          <ul>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Careers</a>
-            </li>
-            <li>
-              <a href="">Mobile</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <div>Contact</div>
-          <ul>
-            <li>
-              <a href="">Help/FAQ</a>
-            </li>
-            <li>
-              <a href="">Press</a>
-            </li>
-            <li>
-              <a href="">Affilates</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <div>More</div>
-          <ul>
-            <li>
-              <a href="">Airlinefees</a>
-            </li>
-            <li>
-              <a href="">Airline</a>
-            </li>
-            <li>
-              <a href="">Low fare tips</a>
-            </li>
-          </ul>
-        </div>
-        <ul>
-          <li>
-            <a href="">
-              <svg width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg width="24" height="20">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg width="24" height="18">
-                <use href="./images/symbol-defs.svg#icon-youtube"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div>
-          <p>Discover our app</p>
-          <div>
-            <a href="">
-              <img src="./images/google-play.svg" alt="google play" />
-            </a>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__nav">
+          <div class="footer__promo">
+            <a class="footer__logo" href="./index.html"> Jadoo. </a>
+            <p class="footer__desc">Book your trip in minute, get full Control for much longer.</p>
           </div>
-          <div>
-            <a href="">
-              <img src="./images/play-store.svg" alt="play store" />
-            </a>
+          <div class="footer__col">
+            <div class="footer__title">Company</div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="">About</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Mobile</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">Contact</div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="">Help/FAQ</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Press</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Affilates</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">More</div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="">Airlinefees</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Airline</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Low fare tips</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="social-media">
+            <li class="social-media__item">
+              <a class="social-media__link" href="">
+                <svg class="social-media__icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link" href="">
+                <svg class="social-media__icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link" href="">
+                <svg class="social-media__icon" width="24" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link" href="">
+                <svg class="social-media__icon" width="24" height="18">
+                  <use href="./images/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="app">
+            <p class="app__title">Discover our app</p>
+            <div class="app__box">
+              <a class="app__link" href="">
+                <img class="app_img" src="./images/google-play.svg" alt="google play" />
+              </a>
+              <a class="app__link" href="">
+                <img class="app__img" src="./images/play-store.svg" alt="play store" />
+              </a>
+            </div>
           </div>
         </div>
-        <div>All rights reserved@jadoo.co</div>
+        <div class="copyrights">All rights reserved@jadoo.co</div>
       </div>
     </footer>
   </body>
