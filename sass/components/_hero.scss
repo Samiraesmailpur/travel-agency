@@ -1,17 +1,70 @@
 .hero {
-  padding-top: 74px;
+  padding-top: 92px;
   padding-bottom: 92px;
+  @media screen and (max-width: 1199.98px) {
+    background-image: url(../../images/hero-stars.png);
+    background-position: right bottom 23%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+  }
 
   &__bg {
-    background-image: url(../../images/hero-stars.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
+    @media screen and (min-width: 1200px) {
+      background-image: url(../../images/hero-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      width: 766px;
+      height: 872px;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__images {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex: 1 0 auto;
+    }
+  }
+
+  &__girl {
+    @media screen and (max-width: 1199.98px) {
+      display: none;
+    }
+  }
+
+  &__container {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+}
+
+.hero__flex-box {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    gap: 44px;
   }
 }
 
 .hero__box {
-  text-align: center;
+  @media screen and (max-width: 1199.98px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 130px;
+  }
 }
+
 .hero__title {
   font-family: 'Volkhov';
   font-style: normal;
@@ -19,66 +72,150 @@
   font-size: 3rem;
   line-height: 1.8;
   letter-spacing: -0.04em;
-  color: #181e4b;
+  color: $logo-text-color;
   margin-bottom: 19px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 5.25rem;
+    line-height: 1.05;
+    max-width: 545px;
+    margin-bottom: 30px;
+  }
 }
 
-.hero__text,
+.hero__headline {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #df6951;
+  margin-bottom: 24px;
+  max-width: 410px;
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
+}
+
 .hero__desc {
-  display: none;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #5e6282;
+  margin-bottom: 34px;
+  max-width: 477px;
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
 }
 
 .hero__button {
-  // font-family: 'Google Sans';
-  font-style: normal;
+  font-family: 'Google Sans';
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.2;
   text-align: center;
   color: $white-text-color;
-  background: #f1a501;
+  background-color: #f1a501;
   box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
   border-radius: 10px;
   padding: 19px 26px;
   border: none;
   margin-bottom: 40px;
+  transition-duration: 300ms;
+
+  &:hover {
+    background-color: #ffb618;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
-.demo {
+.hero__demo {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hero__btn {
+  background: #df6951;
+  box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+  border-radius: 50%;
+  border: none;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: transform 300ms ease;
 
-  &__btn {
-    background: #df6951;
-    box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
-    border-radius: 50%;
-    border: none;
-    width: 52px;
-    height: 52px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-    cursor: pointer;
-    transition: transform 300ms ease;
-
-    &:hover {
-      transform: scale(1.1);
-    }
+  &:hover {
+    transform: scale(1.1);
   }
+}
+.hero__icon {
+  fill: $bg-white-color;
+  max-width: 15px;
+  max-height: 15px;
+}
 
-  &__icon {
-    fill: $bg-white-color;
-    max-width: 15px;
-    max-height: 15px;
+.hero__text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.06rem;
+  line-height: 1.5;
+  color: #686d77;
+}
+
+.hero__images {
+  @media screen and (min-width: 1200px) {
+    position: relative;
   }
-  &__text {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.06rem;
-    line-height: 1.5;
-    color: #686d77;
+}
+
+@keyframes flyaway {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100%, -100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.hero__first-plane,
+.hero__second-plane {
+  position: absolute;
+  &:hover {
+    animation-name: flyaway;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: infinite;
+  }
+}
+
+.hero__first-plane {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  @media screen and (min-width: 1200px) {
+    top: 0;
+    left: 0;
+  }
+}
+
+.hero__second-plane {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    left: 75%;
+    top: 10%;
+    display: block;
   }
 }

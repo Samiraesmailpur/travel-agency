@@ -1,10 +1,18 @@
 .testimonals {
   padding-top: 63px;
-  padding-bottom: 74px;
+  padding-bottom: 91px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 173px;
+  }
 
-  &__content {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @media screen and (min-width: 1200px) {
-      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 87px;
     }
   }
   &__text {
@@ -14,6 +22,13 @@
     text-align: center;
     color: $primary-text-color;
     margin-bottom: 27px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      text-align: left;
+    }
   }
 
   &__title {
@@ -25,6 +40,13 @@
     text-transform: capitalize;
     color: $secondary-text-color;
     margin-bottom: 160px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 3.125rem;
+      line-height: 1.28;
+      text-align: left;
+      max-width: 409px;
+    }
   }
 
   &__card {
@@ -42,6 +64,12 @@
       0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01),
       0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
       0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      max-width: 504px;
+      padding: 28px 68px 34px 34px;
+    }
   }
 
   &__img {
@@ -52,6 +80,9 @@
   }
   &__review {
     margin-bottom: 15px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 34px;
+    }
   }
   &__name {
     font-weight: 600;
@@ -59,10 +90,17 @@
     line-height: 1.5;
     text-align: center;
     margin-bottom: 4px;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
   &__place {
     font-size: 0.875rem;
     line-height: 1.5;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 }

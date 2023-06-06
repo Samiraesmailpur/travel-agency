@@ -1,9 +1,15 @@
 .category {
-  padding-top: 10px;
+  padding-top: 18px;
   padding-bottom: 160px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 91px;
+    background-image: url(../../images/starts-category.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
 }
 
-.category__desc {
+.category__name {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -12,6 +18,10 @@
   text-align: center;
   color: $primary-text-color;
   margin-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+  }
 }
 
 .category__title {
@@ -24,23 +34,28 @@
   text-transform: capitalize;
   color: $secondary-text-color;
   margin-bottom: 13px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 3.125rem;
+    line-height: 1.28;
+    margin-bottom: 65px;
+  }
 }
 
 .category-list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 10px;
+  gap: 45px;
   justify-items: center;
-
-  @media screen and (min-width: 480px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
+  align-items: center;
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
   }
   @media screen and (min-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
   }
 }
 .category-list__item {
@@ -98,21 +113,22 @@
 }
 
 .category-list__text {
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 2.25;
   text-align: center;
   letter-spacing: 0.2px;
   color: $menu-text-color;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
 .category-list__img {
-  margin: 0 auto;
+  height: 106px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .category-list__box {
@@ -129,8 +145,6 @@
   margin-bottom: 15px;
 }
 .category-list__desc {
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.6;

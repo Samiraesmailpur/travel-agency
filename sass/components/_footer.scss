@@ -2,11 +2,22 @@
   background: $secondary-bg-color;
   padding-top: 13px;
   padding-bottom: 27px;
+  @media screen and (min-width: 768px) {
+    background-color: $bg-white-color;
+  }
 
   &__nav {
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 82px;
+    }
   }
 
   &__logo {
@@ -14,7 +25,6 @@
     font-size: 2.75rem;
     line-height: 1.5;
     color: $logo-text-color;
-    margin-bottom: 19px;
   }
 
   &__desc {
@@ -22,13 +32,14 @@
     font-size: 0.81rem;
     line-height: 1.2;
     color: $primary-text-color;
+    margin-top: 19px;
   }
 
   &__title {
     font-weight: 700;
     font-size: 1.31rem;
     line-height: 1.2;
-    color: $footer-text-color;
+    color: $black-text-color;
     margin-bottom: 34px;
   }
 
@@ -38,12 +49,54 @@
     line-height: 1.2;
     color: $primary-text-color;
   }
+  &__promo {
+    @media screen and (max-width: 1199.98px) {
+      margin-bottom: 58px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 207px;
+    }
+  }
+
+  &__flex-container {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 83px;
+      justify-content: center;
+      align-items: baseline;
+    }
+  }
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 72px;
+  }
 }
 
 .social-media {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  @media screen and (max-width: 767.98px) {
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 41px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 35px;
+    }
+  }
 }
 
 .app {
@@ -52,7 +105,7 @@
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: $primary-text-color;
-  margin: 0 auto 58px auto;
+  margin-bottom: 58px;
 
   &__title {
     margin-bottom: 16px;
@@ -60,6 +113,7 @@
 
   &__box {
     display: flex;
+    gap: 7px;
   }
 }
 

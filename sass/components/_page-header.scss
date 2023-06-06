@@ -1,45 +1,202 @@
 .page-header {
+  padding-top: 38px;
+  padding-bottom: 98px;
   background-color: $secondary-bg-color;
+  position: relative;
+
+  @media screen and (min-width: 1200px) {
+    background-color: unset;
+    padding: 0;
+    z-index: 1;
+  }
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-img {
+    width: 114px;
+    height: 33px;
+  }
+
+  &__logo-link {
+    margin-right: auto;
+  }
 }
 
 .menu-list {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  justify-self: center;
+  margin-top: 93px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 0;
+  }
+
+  &__item {
+    text-align: center;
+  }
+  &__item:last-child {
+    @media screen and (min-width: 1200px) {
+      margin-right: 86px;
+    }
+  }
+
   &__link {
-    font-family: 'Poppins';
-    font-style: normal;
+    display: inline-block;
     font-weight: 400;
     font-size: 1.875rem;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.2px;
     color: $menu-text-color;
+    transition: all 0.3s ease;
+
+    @media screen and (min-width: 1200px) {
+      font-family: 'Google Sans';
+      font-size: 1.06rem;
+      line-height: 1.2;
+      color: $menu-text-color-desktop;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__link:hover {
+    color: $menu-hover;
+    transform: scale(1.1);
   }
 }
 
-.links-box a {
-  display: none;
+.links-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    gap: 50px;
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.06rem;
+    line-height: 1.2;
+    color: #212832;
+  }
+
+  & a {
+    // display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      display: flex;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $menu-hover;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__registration {
+    border: 1px solid #212832;
+    border-radius: 5px;
+    padding: 9px 21px;
+
+    &:hover {
+      border: 1px solid $menu-hover;
+    }
+  }
 }
 
-.nav__logo-img {
-  width: 114px;
-  height: 33px;
+.language {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  color: #212832;
+  display: flex;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: flex-end;
+  gap: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
+  &__btn {
+    display: inline-block;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+
+  &__dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__dropdown:hover &__options {
+    display: block;
+    color: $menu-hover;
+  }
+
+  &__options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    top: 100%;
+    transition: all 0.3s ease;
+  }
+
+  &__options:hover {
+    background-color: $menu-text-color;
+  }
+  &__icon {
+    stroke-width: 10px;
+    margin-left: 5px;
+  }
 }
 
-.language__text,
-input[type='checkbox'] {
-  display: none;
+.button-menu {
+  border: none;
+  background: inherit;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+  &__icon {
+    fill: #737373;
+    transition: all 0.3s ease;
+  }
+  &__icon:hover {
+    fill: $menu-hover;
+  }
 }
 
-input[type='checkbox']:checked ~ .language__text {
-  display: block;
+.links-box {
+  display: none; /* Скрываем блок с ссылками по умолчанию */
 }
 
-.language__btn {
-  display: inline-block;
-  padding: 4px 8px;
-  cursor: pointer;
-}
-
-.language__icon {
-  stroke-width: 10px;
+.button-menu__checkbox:checked ~ .links-box {
+  display: block; /* Показываем блок с ссылками при выбранном состоянии чекбокса */
 }
