@@ -2,7 +2,7 @@
   padding-top: 42px;
   padding-bottom: 58px;
   @media screen and (min-width: 1200px) {
-    background-image: url(../../images/stars2.png);
+    background-image: url(../images/stars2.png);
     background-position: right bottom;
     background-repeat: no-repeat;
   }
@@ -24,7 +24,7 @@
     }
 
     @media screen and (min-width: 768px) {
-      background-image: url(../../images/decore-left.png), url(../../images/decore-right.png);
+      background-image: url(../images/decore-left.png), url(../images/decore-right.png);
       background-repeat: no-repeat;
       background-position: bottom left -85px, top right;
     }
@@ -80,7 +80,7 @@
   }
 
   &__btn {
-    font-family: 'Open Sans', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 1.06rem;
     line-height: 1.3;

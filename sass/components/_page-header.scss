@@ -67,7 +67,7 @@
     transition: all 0.3s ease;
 
     @media screen and (min-width: 1200px) {
-      font-family: 'Google Sans', serif;
+      font-family: 'Google Sans', sans-serif;
       font-size: 1.06rem;
       line-height: 1.2;
       color: $menu-text-color-desktop;
@@ -89,7 +89,7 @@
 
   @media screen and (min-width: 1200px) {
     gap: 50px;
-    font-family: 'Google Sans', serif;
+    font-family: 'Google Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1.06rem;
@@ -124,7 +124,7 @@
 }
 
 .language {
-  font-family: 'Google Sans', serif;
+  font-family: 'Google Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
