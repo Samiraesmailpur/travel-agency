@@ -140,7 +140,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .menu-list__link {
-    font-family: "Google Sans", serif;
+    font-family: "Google Sans", sans-serif;
     font-size: 1.06rem;
     line-height: 1.2;
     color: #212832;
@@ -166,7 +166,7 @@ button {
 @media screen and (min-width: 1200px) {
   .links-box {
     gap: 50px;
-    font-family: "Google Sans", serif;
+    font-family: "Google Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1.06rem;
@@ -202,7 +202,7 @@ button {
 }
 
 .language {
-  font-family: "Google Sans", serif;
+  font-family: "Google Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -284,7 +284,7 @@ button {
 }
 @media screen and (max-width: 1199.98px) {
   .hero {
-    background-image: url(../../images/hero-stars.png);
+    background-image: url(../images/hero-stars.png);
     background-position: right bottom 23%;
     background-repeat: no-repeat;
     position: relative;
@@ -297,7 +297,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .hero__bg {
-    background-image: url(../../images/hero-bg.png);
+    background-image: url(../images/hero-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -409,7 +409,7 @@ button {
 }
 
 .hero__button {
-  font-family: "Google Sans", serif;
+  font-family: "Google Sans", sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.2;
@@ -577,7 +577,7 @@ button {
 @media screen and (min-width: 1200px) {
   .category {
     padding-top: 91px;
-    background-image: url(../../images/starts-category.png);
+    background-image: url(../images/starts-category.png);
     background-repeat: no-repeat;
     background-position: top right;
   }
@@ -670,7 +670,7 @@ button {
 
 .category-list__item::before {
   content: "";
-  background-image: url(../../images/bg-category.png);
+  background-image: url(../images/bg-category.png);
   background-size: cover;
   background-color: #df6951;
   border-radius: 30px 0px 10px;
@@ -727,7 +727,7 @@ button {
 }
 
 .category-list__title {
-  font-family: "Open Sans", serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.25rem;
@@ -753,7 +753,7 @@ button {
 }
 @media screen and (max-width: 1199.98px) {
   .destinations {
-    background-image: url(../../images/stars.png);
+    background-image: url(../images/stars.png);
     background-repeat: no-repeat;
     background-position: top left;
   }
@@ -816,7 +816,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .destinations__list {
-    background-image: url(../../images/decore.png);
+    background-image: url(../images/decore.png);
     background-repeat: no-repeat;
     background-position: right bottom 50px;
     gap: 0;
@@ -875,7 +875,7 @@ button {
 }
 @media screen and (max-width: 1199.98px) {
   .steps {
-    background-image: url(../../images/stars.png), url(../../images/stars2.png);
+    background-image: url(../images/stars.png), url(../images/stars2.png);
     background-repeat: no-repeat;
     background-position: top -50px left, bottom right;
   }
@@ -1364,7 +1364,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
-    background-image: url(../../images/stars2.png);
+    background-image: url(../images/stars2.png);
     background-position: right bottom;
     background-repeat: no-repeat;
   }
@@ -1399,7 +1399,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .subscribe__box {
-    background-image: url(../../images/decore-left.png), url(../../images/decore-right.png);
+    background-image: url(../images/decore-left.png), url(../images/decore-right.png);
     background-repeat: no-repeat;
     background-position: bottom left -85px, top right;
   }
@@ -1464,7 +1464,7 @@ button {
   border-radius: 10px;
 }
 .subscribe__btn {
-  font-family: "Open Sans", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 1.06rem;
   line-height: 1.3;

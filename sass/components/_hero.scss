@@ -2,7 +2,7 @@
   padding-top: 92px;
   padding-bottom: 92px;
   @media screen and (max-width: 1199.98px) {
-    background-image: url(../../images/hero-stars.png);
+    background-image: url(../images/hero-stars.png);
     background-position: right bottom 23%;
     background-repeat: no-repeat;
     position: relative;
@@ -14,7 +14,7 @@
 
   &__bg {
     @media screen and (min-width: 1200px) {
-      background-image: url(../../images/hero-bg.png);
+      background-image: url(../images/hero-bg.png);
       background-repeat: no-repeat;
       background-size: contain;
       position: absolute;
@@ -109,7 +109,7 @@
 }
 
 .hero__button {
-  font-family: 'Google Sans', serif;
+  font-family: 'Google Sans', sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.2;
