@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Google Sans";
   font-display: swap;
-  src: local("O"), url("../../fonts/Google-Sans-Medium.woff") format("woff"), url("../../fonts/Google-Sans-Medium.ttf") format("truetype");
+  src: local("O"), url("../fonts/Google-Sans-Medium.woff") format("woff"), url("../fonts/Google-Sans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -47,8 +47,7 @@ button {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 0 20px;
   width: 100%;
   max-width: 1200px;
@@ -67,30 +66,9 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .header {
-    background-color: unset;
     padding: 0;
     z-index: 1;
-  }
-}
-
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-@media screen and (min-width: 768px) {
-  .menu {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    background: url(../images/decore-top.png) no-repeat top left;
   }
 }
 
@@ -233,25 +211,39 @@ button {
   background-color: #737373;
 }
 
-.menu-toggle__icon {
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+.menu__burger {
   fill: #737373;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
-.menu-toggle__icon:hover {
+.menu:hover {
   fill: #f1a501;
 }
-
-#menu-toggle {
-  opacity: 0;
-}
-
-.menu-toggle__btn {
+.menu__btn {
   display: none;
 }
 @media screen and (max-width: 767.98px) {
-  .menu-toggle__btn {
+  .menu__btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -261,6 +253,28 @@ button {
     cursor: pointer;
     z-index: 999;
   }
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .auth {
+  visibility: visible;
+  right: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > .menu__burger {
+  display: none;
+}
+
+#menu__toggle:checked ~ .menu__btn > .menu__cross {
+  display: block;
+}
+
+.menu__cross {
+  fill: #737373;
+  display: none;
 }
 
 .auth {
@@ -312,6 +326,7 @@ button {
   text-align: center;
   letter-spacing: 0.2px;
   color: #737373;
+  display: inline-block;
 }
 @media screen and (min-width: 768px) {
   .auth__link {
@@ -329,45 +344,25 @@ button {
           transform: scale(1.1);
 }
 
-#menu-toggle:checked ~ .auth {
-  visibility: visible;
-  right: 0;
-}
-
-#menu-toggle:checked ~ .menu-toggle__btn > .menu-toggle__icon {
-  display: none;
-}
-
-#menu-toggle:checked ~ .menu-toggle__btn > .menu-toggle__cross {
-  display: block;
-}
-
-.menu-toggle__cross {
-  fill: #737373;
-  display: none;
-}
-
 .hero {
   padding-top: 92px;
   padding-bottom: 92px;
 }
 @media screen and (max-width: 1199.98px) {
   .hero {
-    background-image: url(../images/hero-stars.png);
-    background-position: right bottom 23%;
-    background-repeat: no-repeat;
+    background: url(../images/hero-stars.png) no-repeat right bottom 23%;
     position: relative;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 0;
+    background: url(../images/decore-top.png) no-repeat top -67px left;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__bg {
-    background-image: url(../images/hero-bg.png);
-    background-repeat: no-repeat;
+    background: url(../images/hero-bg.png) no-repeat;
     background-size: contain;
     position: absolute;
     width: 766px;
@@ -578,9 +573,7 @@ button {
 @media screen and (min-width: 1200px) {
   .category {
     padding-top: 91px;
-    background-image: url(../images/starts-category.png);
-    background-repeat: no-repeat;
-    background-position: top right;
+    background: url(../images/starts-category.png) no-repeat top right;
   }
 }
 .category__name {
@@ -739,9 +732,7 @@ button {
 }
 @media screen and (max-width: 1199.98px) {
   .destinations {
-    background-image: url(../images/stars.png);
-    background-repeat: no-repeat;
-    background-position: top left;
+    background: url(../images/stars.png) no-repeat top left;
   }
 }
 .destinations__date {
@@ -802,9 +793,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .destinations-list {
-    background-image: url(../images/decore.png);
-    background-repeat: no-repeat;
-    background-position: right bottom 50px;
+    background: url(../images/decore.png) no-repeat right bottom 50px;
     gap: 0;
   }
 }
@@ -993,6 +982,7 @@ button {
   max-width: 302px;
   margin: 0 auto;
   position: relative;
+  z-index: -1;
 }
 @media screen and (min-width: 1200px) {
   .trip {
@@ -1093,6 +1083,11 @@ button {
     padding: 15px 25px 22px 20px;
     top: 50%;
     left: 55%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    top: 55%;
   }
 }
 .card__image {
@@ -1325,6 +1320,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   height: 86px;
+  border-radius: 10px;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
 }
@@ -1334,7 +1330,6 @@ button {
   background: white;
   -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
           box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
-  border-radius: 10px;
 }
 @media screen and (max-width: 1199.98px) {
   .selling__item:nth-child(5) {
@@ -1348,9 +1343,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
-    background-image: url(../images/stars2.png);
-    background-position: right bottom;
-    background-repeat: no-repeat;
+    background: url(../images/stars2.png) no-repeat bottom right;
   }
 }
 .subscribe__box {
@@ -1483,9 +1476,7 @@ button {
 @media screen and (min-width: 768px) {
   .footer {
     background-color: white;
-    background-image: url(../images/footer-decore.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
+    background: url(../images/footer-decore.png) no-repeat right bottom;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1502,7 +1493,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 40px;
+  gap: 58px;
 }
 @media screen and (min-width: 768px) {
   .footer__nav {
@@ -1635,7 +1626,6 @@ button {
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: #5e6282;
-  margin-bottom: 58px;
 }
 .app__title {
   margin-bottom: 16px;
@@ -1653,7 +1643,12 @@ button {
   line-height: 1.2;
   color: #5e6282;
   text-align: center;
-  margin-top: 86px;
+  margin-top: 58px;
+}
+@media screen and (min-width: 768px) {
+  .copyrights {
+    margin-top: 86px;
+  }
 }
 
 .hero__button {

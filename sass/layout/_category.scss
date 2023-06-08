@@ -3,9 +3,7 @@
   padding-bottom: 160px;
   @include desktop-large {
     padding-top: 91px;
-    background-image: url(../images/starts-category.png);
-    background-repeat: no-repeat;
-    background-position: top right;
+    background: url(../images/starts-category.png) no-repeat top right;
   }
 
   &__name {

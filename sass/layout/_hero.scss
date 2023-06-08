@@ -2,20 +2,18 @@
   padding-top: 92px;
   padding-bottom: 92px;
   @include desktop-small {
-    background-image: url(../images/hero-stars.png);
-    background-position: right bottom 23%;
-    background-repeat: no-repeat;
+    background: url(../images/hero-stars.png) no-repeat right bottom 23%;
     position: relative;
   }
 
   @include desktop-large {
     padding-top: 0;
+    background: url(../images/decore-top.png) no-repeat top -67px left;
   }
 
   &__bg {
     @include desktop-large {
-      background-image: url(../images/hero-bg.png);
-      background-repeat: no-repeat;
+      background: url(../images/hero-bg.png) no-repeat;
       background-size: contain;
       position: absolute;
       width: 766px;

@@ -3,9 +3,7 @@
   padding-bottom: 72px;
 
   @include desktop-small {
-    background-image: url(../images/stars.png);
-    background-repeat: no-repeat;
-    background-position: top left;
+    background: url(../images/stars.png) no-repeat top left;
   }
 
   &__date {
@@ -60,9 +58,7 @@
   }
 
   @include desktop-large {
-    background-image: url(../images/decore.png);
-    background-repeat: no-repeat;
-    background-position: right bottom 50px;
+    background: url(../images/decore.png) no-repeat right bottom 50px;
     gap: 0;
   }
   &__item {

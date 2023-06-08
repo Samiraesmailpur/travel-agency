@@ -4,9 +4,7 @@
   padding-bottom: 27px;
   @include tablet {
     background-color: $bg-white-color;
-    background-image: url(../images/footer-decore.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
+    background: url(../images/footer-decore.png) no-repeat right bottom;
   }
   @include desktop-large {
     padding-top: 117px;
@@ -16,7 +14,7 @@
   &__nav {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 58px;
 
     @include tablet {
       flex-direction: row;
@@ -125,7 +123,6 @@
   line-height: 1.2;
   letter-spacing: 0.005em;
   color: $primary-text-color;
-  margin-bottom: 58px;
 
   &__title {
     margin-bottom: 16px;
@@ -143,5 +140,9 @@
   line-height: 1.2;
   color: $primary-text-color;
   text-align: center;
-  margin-top: 86px;
+  margin-top: 58px;
+
+  @include tablet {
+    margin-top: 86px;
+  }
 }
