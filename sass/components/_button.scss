@@ -1,0 +1,60 @@
+.hero__button {
+  font-family: $secondary-font;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  text-align: center;
+  color: $white-text-color;
+  background-color: #f1a501;
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  border-radius: 10px;
+  padding: 19px 26px;
+  border: none;
+  margin-bottom: 40px;
+  transition-duration: 300ms;
+
+  &:hover {
+    background-color: #ffb618;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.hero__btn {
+  background: #df6951;
+  box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+  border-radius: 50%;
+  border: none;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: transform 300ms ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.subscribe__btn {
+  font-family: $additional-font;
+  font-weight: 600;
+  font-size: 1.06rem;
+  line-height: 1.3;
+  color: $white-text-color;
+  background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+  border-radius: 10px;
+  border: none;
+  padding: 15px 33px;
+  @media screen and (max-width: 767.98px) {
+    position: relative;
+  }
+
+  &:hover {
+    background: linear-gradient(180deg, #fd8c63 0%, #fd6750 100%);
+  }
+}

@@ -7,8 +7,13 @@
   font-style: normal;
 }
 
+html,
 body {
-  font-family: Poppins, sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
   background-color: $bg-white-color;
 }
 

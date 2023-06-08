@@ -18,51 +18,53 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="page-header">
-      <div class="container">
+    <header class="header">
+      <div class="container header__container">
         <nav class="nav">
           <a class="nav__logo-link" href="./index.html">
             <img class="nav__logo-img" src="./images/logo.svg" alt="logo" />
           </a>
-          <ul class="menu-list">
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="">Destination</a>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="">Destination</a>
             </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="">Hotels</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="">Hotels</a>
             </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="">Flights</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="">Flights</a>
             </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="">Booking</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="">Booking</a>
             </li>
           </ul>
-          <div class="links-box">
-            <a class="links-box__login" href="">Login</a>
-            <a class="links-box__registration" href="">Sign up</a>
-          </div>
-          <div class="language">
-            <div class="language__dropdown">
-              EN
-              <svg class="language__icon" width="9" height="4.5">
-                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+          <div class="menu">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-toggle__btn" for="menu-toggle">
+              <svg class="menu-toggle__icon" width="24" height="14">
+                <use href="./images/sprite.svg#icon-menu"></use>
               </svg>
-              <div class="language__options">UA</div>
+              <svg class="menu-toggle__cross" width="24" height="14">
+                <use href="./images/sprite.svg#icon-cross"></use>
+              </svg>
+            </label>
+            <ul class="auth">
+              <li class="auth__item">
+                <a class="auth__link" href="">Login</a>
+              </li>
+              <li class="auth__item">
+                <a class="auth__link auth__link" href="">Sign up</a>
+              </li>
+            </ul>
+            <div class="language-switcher">
+              <div class="language-switcher__dropdown">
+                EN
+                <svg class="language-switcher__icon" width="9" height="4.5">
+                  <use href="./images/sprite.svg#icon-arrow"></use>
+                </svg>
+                <div class="language-switcher__options">UA</div>
+              </div>
             </div>
-            <!-- <input class="button-menu__checkbox" type="checkbox" id="menu-toggle" />
-            <label class="button-menu" for="menu-toggle"> -->
-            <button class="button-menu">
-              <svg class="button-menu__icon" width="24" height="14">
-                <use href="./images/symbol-defs.svg#icon-menu"></use>
-              </svg>
-            </button>
-
-            <!-- </label> -->
-            <!-- <div class="links-box">
-              <a class="links-box__login" href="">Login</a>
-              <a class="links-box__registration" href="">Sign up</a>
-            </div> -->
           </div>
         </nav>
       </div>
@@ -72,7 +74,7 @@
         <div class="hero__bg"></div>
         <div class="container hero__container">
           <div class="hero__box">
-            <p class="hero__headline">Best Destinations around the world</p>
+            <p class="hero__pre-title">Best Destinations around the world</p>
             <h1 class="hero__title">Travel, enjoy and live a new and full life</h1>
             <p class="hero__desc">
               Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it
@@ -83,17 +85,17 @@
               <div class="hero__demo">
                 <button type="hero__play" class="hero__btn" href="">
                   <svg class="hero__icon" width="15" height="15">
-                    <use href="./images/symbol-defs.svg#icon-video"></use>
+                    <use href="./images/sprite.svg#icon-video"></use>
                   </svg>
                 </button>
                 <p class="hero__text">Play Demo</p>
               </div>
             </div>
           </div>
-          <div class="hero__images">
-            <img class="hero__first-plane" src="./images/first-plane.svg" alt="plane" />
-            <img class="hero__second-plane" src="./images/second-plane.svg" alt="plane" />
-            <img class="hero__girl" src="./images/traveller-girl.png" alt="girl" />
+          <div class="images-box">
+            <img class="images-box__first-plane" src="./images/first-plane.svg" alt="plane" />
+            <img class="images-box__second-plane" src="./images/second-plane.svg" alt="plane" />
+            <img class="images-box__girl" src="./images/traveller-girl.png" alt="girl" />
           </div>
         </div>
       </section>
@@ -156,61 +158,67 @@
             <p class="destinations__text">Top Selling</p>
             <h2 class="destinations__title">Top Destinations</h2>
           </div>
-          <ul class="destinations__list">
-            <li class="destinations__item">
-              <picture class="destinations__pic">
-                <source srcset="./images/rome.jpg 1x, ./images/rome-2x.jpg 2x" />
-                <img class="destinations__image" src="./images/rome.jpg" alt="Rome" />
-              </picture>
-              <div class="destinations-box">
-                <div class="destinations-box__text">
-                  Rome, Italy <br />
-                  <a class="destinations-box__link" href="">
-                    <svg class="destinations-box__icon" width="15" height="16">
-                      <use href="./images/symbol-defs.svg#icon-navigation"></use>
-                    </svg>
-                    10 Days Trip
-                  </a>
+          <ul class="destinations-list">
+            <li class="destinations-list__item">
+              <a class="destinations-list__link" href="">
+                <picture class="destinations-list__pic">
+                  <source srcset="./images/rome.jpg 1x, ./images/rome-2x.jpg 2x" />
+                  <img class="destinations-list__image" src="./images/rome.jpg" alt="Rome" />
+                </picture>
+                <div class="destinations-box">
+                  <div class="destinations-box__text">
+                    Rome, Italy <br />
+                    <div class="destinations-box__duration">
+                      <svg class="destinations-box__icon" width="15" height="16">
+                        <use href="./images/sprite.svg#icon-navigation"></use>
+                      </svg>
+                      10 Days Trip
+                    </div>
+                  </div>
+                  <p class="destinations-box__price">$5,42k</p>
                 </div>
-                <p class="destinations-box__price">$5,42k</p>
-              </div>
+              </a>
             </li>
-            <li class="destinations__item">
-              <picture class="destinations__pic">
-                <source srcset="./images/london.jpg 1x, ./images/london-2x.jpg 2x" />
-                <img class="destinations__image" src="./images/london.jpg" alt="Rome" />
-              </picture>
-              <div class="destinations-box">
-                <div class="destinations-box__text">
-                  London, UK
-                  <br />
-                  <a class="destinations-box__link" href="">
-                    <svg class="destinations-box__icon" width="15" height="16">
-                      <use href="./images/symbol-defs.svg#icon-navigation"></use>
-                    </svg>
-                    12 Days Trip
-                  </a>
+            <li class="destinations-list__item">
+              <a class="destinations-list__link" href="">
+                <picture class="destinations-list__pic">
+                  <source srcset="./images/london.jpg 1x, ./images/london-2x.jpg 2x" />
+                  <img class="destinations-list__image" src="./images/london.jpg" alt="Rome" />
+                </picture>
+                <div class="destinations-box">
+                  <div class="destinations-box__text">
+                    London, UK
+                    <br />
+                    <div class="destinations-box__duration">
+                      <svg class="destinations-box__icon" width="15" height="16">
+                        <use href="./images/sprite.svg#icon-navigation"></use>
+                      </svg>
+                      12 Days Trip
+                    </div>
+                  </div>
+                  <p class="destinations-box__price">$4.2k</p>
                 </div>
-                <p class="destinations-box__price">$4.2k</p>
-              </div>
+              </a>
             </li>
-            <li class="destinations__item">
-              <picture class="destinations__pic">
-                <source srcset="./images/europe.jpg 1x, ./images/europe-2x.jpg 2x" />
-                <img class="destinations__image" src="./images/europe.jpg" alt="Rome" />
-              </picture>
-              <div class="destinations-box">
-                <div class="destinations-box__text">
-                  Full Europe <br />
-                  <a class="destinations-box__link" href="">
-                    <svg class="destinations-box__icon" width="15" height="16">
-                      <use href="./images/symbol-defs.svg#icon-navigation"></use>
-                    </svg>
-                    28 Days Trip
-                  </a>
+            <li class="destinations-list__item">
+              <a class="destinations-list__link" href="">
+                <picture class="destinations-list__pic">
+                  <source srcset="./images/europe.jpg 1x, ./images/europe-2x.jpg 2x" />
+                  <img class="destinations-list__image" src="./images/europe.jpg" alt="Rome" />
+                </picture>
+                <div class="destinations-box">
+                  <div class="destinations-box__text">
+                    Full Europe <br />
+                    <div class="destinations-box__duration">
+                      <svg class="destinations-box__icon" width="15" height="16">
+                        <use href="./images/sprite.svg#icon-navigation"></use>
+                      </svg>
+                      28 Days Trip
+                    </div>
+                  </div>
+                  <p class="destinations-box__price">$15k</p>
                 </div>
-                <p class="destinations-box__price">$15k</p>
-              </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -224,7 +232,7 @@
               <li class="steps-list__item">
                 <div class="steps-list__bg steps-list__bg_yellow">
                   <svg class="steps-list__icon" width="22" height="22">
-                    <use href="./images/symbol-defs.svg#icon-square"></use>
+                    <use href="./images/sprite.svg#icon-square"></use>
                   </svg>
                 </div>
                 <div class="steps-list__desc">
@@ -237,7 +245,7 @@
               <li class="steps-list__item">
                 <div class="steps-list__bg steps-list__bg_red">
                   <svg class="steps-list__icon" width="22" height="18">
-                    <use href="./images/symbol-defs.svg#icon-water-sport"></use>
+                    <use href="./images/sprite.svg#icon-water-sport"></use>
                   </svg>
                 </div>
                 <div class="steps-list__desc">
@@ -250,7 +258,7 @@
               <li class="steps-list__item">
                 <div class="steps-list__bg steps-list__bg_green">
                   <svg class="steps-list__icon" width="22" height="19">
-                    <use href="./images/symbol-defs.svg#icon-car"></use>
+                    <use href="./images/sprite.svg#icon-car"></use>
                   </svg>
                 </div>
                 <div class="steps-list__desc">
@@ -278,29 +286,29 @@
             <ul class="trip__list">
               <li class="trip__item">
                 <svg class="trip__icon" width="12" height="12">
-                  <use href="./images/symbol-defs.svg#icon-leaf"></use>
+                  <use href="./images/sprite.svg#icon-leaf"></use>
                 </svg>
               </li>
               <li class="trip__item">
                 <svg class="trip__icon" width="12" height="12">
-                  <use href="./images/symbol-defs.svg#icon-map"></use>
+                  <use href="./images/sprite.svg#icon-map"></use>
                 </svg>
               </li>
               <li class="trip__item">
                 <svg class="trip__icon" width="12" height="12">
-                  <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                  <use href="./images/sprite.svg#icon-telegram"></use>
                 </svg>
               </li>
             </ul>
             <div class="trip__info">
               <div class="trip__data">
                 <svg class="trip__icon" width="13" height="14">
-                  <use href="./images/symbol-defs.svg#icon-house"></use>
+                  <use href="./images/sprite.svg#icon-house"></use>
                 </svg>
                 <span>24 people going</span>
               </div>
               <svg width="16" height="16">
-                <use href="./images/symbol-defs.svg#icon-heart"></use>
+                <use href="./images/sprite.svg#icon-heart"></use>
               </svg>
             </div>
             <div class="card">
@@ -382,7 +390,7 @@
                 Subscribe
                 <div class="subscribe__bg">
                   <svg class="subscribe__icon" width="36" height="30">
-                    <use href="./images/symbol-defs.svg#icon-send"></use>
+                    <use href="./images/sprite.svg#icon-send"></use>
                   </svg>
                 </div>
               </button>
@@ -448,28 +456,28 @@
                 <li class="social-media__item">
                   <a class="social-media__link" href="https://uk-ua.facebook.com/" target="_blank">
                     <svg class="social-media__icon" width="24" height="24">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      <use href="./images/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-media__item">
                   <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
                     <svg class="social-media__icon" width="24" height="24">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-media__item">
                   <a class="social-media__link" href="https://twitter.com/" target="_blank">
                     <svg class="social-media__icon" width="24" height="20">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      <use href="./images/sprite.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-media__item">
                   <a class="social-media__link" href="https://www.youtube.com/" target="_blank">
                     <svg class="social-media__icon" width="24" height="18">
-                      <use href="./images/symbol-defs.svg#icon-youtube"></use>
+                      <use href="./images/sprite.svg#icon-youtube"></use>
                     </svg>
                   </a>
                 </li>

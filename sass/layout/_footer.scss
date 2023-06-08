@@ -2,8 +2,15 @@
   background: $secondary-bg-color;
   padding-top: 13px;
   padding-bottom: 27px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     background-color: $bg-white-color;
+    background-image: url(../images/footer-decore.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+  @include desktop-large {
+    padding-top: 117px;
+    padding-bottom: 79px;
   }
 
   &__nav {
@@ -11,11 +18,11 @@
     flex-direction: column;
     gap: 40px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       flex-direction: row;
       justify-content: space-between;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop-large {
       gap: 82px;
     }
   }
@@ -50,37 +57,49 @@
     color: $primary-text-color;
   }
   &__promo {
-    @media screen and (max-width: 1199.98px) {
+    @include desktop-small {
       margin-bottom: 58px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop-large {
       max-width: 207px;
     }
   }
 
   &__flex-container {
-    @media screen and (min-width: 1200px) {
+    @include desktop-large {
       display: flex;
       gap: 83px;
       justify-content: center;
       align-items: baseline;
     }
   }
-}
 
-.footer__box {
-  display: flex;
-  flex-direction: column;
-  gap: 43px;
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    gap: 72px;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    @include tablet {
+      flex-direction: row;
+      gap: 72px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &__link {
+    transition-duration: 300ms;
+
+    &:hover {
+      color: $orange-color;
+    }
   }
 }
 
 .social-media {
-  @media screen and (max-width: 767.98px) {
+  @include mobile-small {
     margin: 0 auto;
   }
 
@@ -90,10 +109,11 @@
     gap: 20px;
     margin-bottom: 41px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       margin-bottom: 20px;
+      justify-content: flex-start;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop-large {
       margin-bottom: 35px;
     }
   }
@@ -123,4 +143,5 @@
   line-height: 1.2;
   color: $primary-text-color;
   text-align: center;
+  margin-top: 86px;
 }

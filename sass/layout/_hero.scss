@@ -1,0 +1,177 @@
+.hero {
+  padding-top: 92px;
+  padding-bottom: 92px;
+  @include desktop-small {
+    background-image: url(../images/hero-stars.png);
+    background-position: right bottom 23%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  @include desktop-large {
+    padding-top: 0;
+  }
+
+  &__bg {
+    @include desktop-large {
+      background-image: url(../images/hero-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      width: 766px;
+      height: 872px;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__container {
+    @include desktop-large {
+      display: flex;
+    }
+  }
+
+  &__box {
+    @include desktop-small {
+      text-align: center;
+    }
+    @include desktop-large {
+      padding-top: 130px;
+    }
+  }
+
+  &__pre-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: $orange-color;
+    margin-bottom: 24px;
+    max-width: 410px;
+    @include desktop-small {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-family: $heading-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.8;
+    letter-spacing: -0.04em;
+    color: $logo-text-color;
+    margin-bottom: 19px;
+
+    @include desktop-large {
+      font-size: 5.25rem;
+      line-height: 1.05;
+      max-width: 545px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__desc {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: $primary-text-color;
+    margin-bottom: 34px;
+    max-width: 477px;
+    @include desktop-small {
+      display: none;
+    }
+  }
+
+  &__flex-box {
+    @include desktop-large {
+      display: flex;
+      align-items: baseline;
+      gap: 44px;
+    }
+  }
+
+  &__demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    fill: $bg-white-color;
+    max-width: 15px;
+    max-height: 15px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 1.06rem;
+    line-height: 1.5;
+    color: $gray-hero-color;
+  }
+}
+
+.images-box {
+  @include tablet {
+    display: flex;
+  }
+  @include desktop-large {
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+  }
+
+  &__girl {
+    @include desktop-small {
+      display: none;
+    }
+    z-index: 1;
+  }
+
+  &__first-plane,
+  &__second-plane {
+    position: absolute;
+    &:hover {
+      animation: fly 3s infinite;
+    }
+  }
+
+  &__first-plane {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: 2;
+    @include desktop-large {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__second-plane {
+    display: none;
+    @include desktop-large {
+      left: 75%;
+      top: 10%;
+      display: block;
+    }
+  }
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(100%, -100%);
+    opacity: 0;
+  }
+  75% {
+    transform: translate(-100%, 100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
