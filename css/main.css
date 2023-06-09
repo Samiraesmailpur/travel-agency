@@ -442,9 +442,9 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 44px;
   }
 }
@@ -463,6 +463,11 @@ button {
   fill: white;
   max-width: 15px;
   max-height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .hero__text {
   font-weight: 500;
@@ -1701,15 +1706,7 @@ button {
   border: none;
   width: 52px;
   height: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
   margin-right: 20px;
   cursor: pointer;
   -webkit-transition: -webkit-transform 300ms ease;

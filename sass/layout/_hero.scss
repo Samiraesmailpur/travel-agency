@@ -84,7 +84,7 @@
   &__flex-box {
     @include desktop-large {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       gap: 44px;
     }
   }
@@ -99,6 +99,10 @@
     fill: $bg-white-color;
     max-width: 15px;
     max-height: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__text {
