@@ -1,8 +1,7 @@
 .category {
   padding-top: 18px;
-  padding-bottom: 160px;
+  padding-bottom: 60px;
   @include desktop-large {
-    padding-top: 91px;
     background: url(../images/starts-category.png) no-repeat top right;
   }
 
@@ -62,6 +61,7 @@
     border-radius: 36px;
     max-width: 272px;
     cursor: pointer;
+    transition: all 300ms ease;
 
     &:nth-last-child(-n + 2) {
       display: none;

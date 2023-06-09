@@ -1,6 +1,6 @@
 .testimonals {
   padding-top: 63px;
-  padding-bottom: 91px;
+  padding-bottom: 74px;
   @include desktop-large {
     padding-bottom: 173px;
   }
@@ -12,7 +12,7 @@
     @include desktop-large {
       flex-direction: row;
       justify-content: center;
-      gap: 87px;
+      gap: 100px;
     }
   }
   &__text {
@@ -77,6 +77,11 @@
     left: 50%;
     top: -50%;
     transform: translate(-50%, 50%);
+
+    @include desktop-large {
+      left: 0;
+      top: -25%;
+    }
   }
   &__review {
     margin-bottom: 15px;

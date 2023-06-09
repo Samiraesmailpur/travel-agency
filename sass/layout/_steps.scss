@@ -1,6 +1,6 @@
 .steps {
   padding-bottom: 86px;
-  padding-top: 120px;
+  padding-top: 93px;
   @include desktop-small {
     background-image: url(../images/stars.png), url(../images/stars2.png);
     background-repeat: no-repeat;
@@ -123,7 +123,10 @@
   max-width: 302px;
   margin: 0 auto;
   position: relative;
-  z-index: -1;
+
+  @include mobile-small {
+    z-index: -1;
+  }
 
   @include desktop-large {
     max-width: 370px;

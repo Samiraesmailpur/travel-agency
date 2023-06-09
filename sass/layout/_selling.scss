@@ -1,5 +1,6 @@
 .selling {
-  padding-bottom: 91px;
+  padding-bottom: 34px;
+  padding-top: 42px;
 
   &__title {
     font-weight: 600;
@@ -35,7 +36,7 @@
     align-items: center;
     height: 86px;
     border-radius: 10px;
-    transition-duration: 300ms;
+    transition: all 300ms ease;
   }
 
   &__item:hover {

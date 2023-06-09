@@ -1,13 +1,13 @@
 .footer {
   background: $secondary-bg-color;
-  padding-top: 13px;
-  padding-bottom: 27px;
+  padding-top: 15px;
+  padding-bottom: 30px;
   @include tablet {
     background-color: $bg-white-color;
     background: url(../images/footer-decore.png) no-repeat right bottom;
   }
   @include desktop-large {
-    padding-top: 117px;
+    padding-top: 96px;
     padding-bottom: 79px;
   }
 
@@ -88,7 +88,7 @@
   }
 
   &__link {
-    transition-duration: 300ms;
+    transition: color 300ms ease;
 
     &:hover {
       color: $orange-color;

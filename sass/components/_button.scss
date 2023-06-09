@@ -11,7 +11,7 @@
   padding: 19px 26px;
   border: none;
   margin-bottom: 40px;
-  transition-duration: 300ms;
+  transition: background-color 300ms ease;
 
   &:hover {
     background-color: #ffb618;
@@ -22,7 +22,7 @@
 }
 
 .hero__btn {
-  background: #df6951;
+  background: $orange-color;
   box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
   border-radius: 50%;
   border: none;
