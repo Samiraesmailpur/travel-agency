@@ -496,6 +496,7 @@ button {
 }
 .images-box__girl {
   z-index: 1;
+  width: 520px;
 }
 @media screen and (max-width: 1199.98px) {
   .images-box__girl {
@@ -526,7 +527,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .images-box__second-plane {
-    left: 75%;
+    left: 69%;
     top: 10%;
     display: block;
   }
